@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterBloodGroup">
+
+    <ImageView
+        android:id="@+id/welcomeimg"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/wlcom2"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What Is Your Blood Group?"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/welcomeimg"/>
+
+    <RelativeLayout
+        android:id="@+id/cardRela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:columnCount="3"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+
+
+
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card11"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:shape="ring"
+                app:cardCornerRadius="25dp"
+                android:elevation="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="#E3DEDE"
+
+
+                >
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:id="@+id/blood"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="A+"
+                       android:textColor="@color/Red1"
+                       android:textSize="15dp"
+                       android:textStyle="bold"
+                       android:layout_centerInParent="true"
+
+                       />
+               </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card22"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:shape="ring"
+                app:cardCornerRadius="25dp"
+                android:elevation="8dp"
+
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="#E3DEDE"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/blood2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A-"
+                        android:textColor="@color/Red1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+
+                        />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card33"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:shape="ring"
+                app:cardCornerRadius="25dp"
+                android:elevation="8dp"
+
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="#E3DEDE"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/blood3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B+"
+                        android:textColor="@color/Red1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+
+                        />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card44"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:shape="ring"
+                app:cardCornerRadius="25dp"
+                android:elevation="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="#E3DEDE"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/blood4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B-"
+                        android:textColor="@color/Red1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+
+                        />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card55"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:shape="ring"
+                app:cardCornerRadius="25dp"
+                android:elevation="8dp"
+
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="#E3DEDE"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/blood5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O+"
+                        android:textColor="@color/Red1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+
+                        />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card66"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:shape="ring"
+                app:cardCornerRadius="25dp"
+                android:elevation="8dp"
+
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="#E3DEDE"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/blood6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O-"
+                        android:textColor="@color/Red1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+
+                        />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card77"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:shape="ring"
+                app:cardCornerRadius="25dp"
+                android:elevation="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="#E3DEDE"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/blood7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AB+"
+                        android:textColor="@color/Red1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+
+                        />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card88"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:shape="ring"
+                app:cardCornerRadius="25dp"
+                android:elevation="8dp"
+
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="#E3DEDE"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/blood8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AB-"
+                        android:textColor="@color/Red1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+
+                        />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Blood Group Needs To Be Accurate. If You Don't Know About It Contact Nearest clinic."
+        android:textSize="15dp"
+
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/cardRela"/>
+
+    <Button
+        android:id="@+id/startbtn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Next"
+        android:background="@drawable/round_corners"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"/>
+
+</RelativeLayout>

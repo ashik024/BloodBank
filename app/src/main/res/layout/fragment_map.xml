@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content">
+
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    tools:context=".MapFrag"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"/>
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/swhmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Donor"
+        android:background="@color/Red1"
+
+
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mapcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/namemap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Hospital"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+             />
+            <TextView
+                android:id="@+id/ratingmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="8.0"
+                android:textSize="16dp"
+
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:id="@+id/addresssmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="8.0"
+                android:textSize="16dp"
+
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/namemap"
+                />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Open"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/ratingmap"
+                />
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Book Hospital"
+                android:background="@drawable/round_corners"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/addresssmap"
+               />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
